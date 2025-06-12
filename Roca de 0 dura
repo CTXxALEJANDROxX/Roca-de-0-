@@ -44,7 +44,7 @@ if getgenv().AutoRockHit then
                     end
                 end
             end
-            task.wait(0.5)
+            task.wait(0.1)
         end
         warn("❌ No se encontró Ancient Jungle Rock en "..timeout.."s")
     end
@@ -75,7 +75,7 @@ if getgenv().AutoRockHit then
             if not ok then
                 warn("⚠️ Error en simulateTouch:", err)
             end
-            task.wait(0.08)
+            task.wait(0.01)
         end
         print("🛑 AutoRockHit DESACTIVADO")
     end)
